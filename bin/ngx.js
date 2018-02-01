@@ -2,15 +2,13 @@
 
 const pkg = require('../package.json');
 
+const { runCommand } = require('../src')
+
 require('yargs')
   .alias('v', 'version')
   .version(pkg.version)
   .usage('Usage: $0 run <task>')
-  .command({
-    command: 'run <task>',
-    desc: 'Run or execute a task <bundle|build|test|lint>',
-    handler: (argv) => require(`../src/tasks/${argv.task}`)
-  })
+  .command(runCommand)
   .example('$0 run bundle', 'Run the bundle task')
   .demandCommand()
   .help()
