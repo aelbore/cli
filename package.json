@@ -1,6 +1,6 @@
 {
   "name": "@ngx-devtools/cli",
-  "version": "0.0.1",
+  "version": "0.6.0",
   "description": "",
   "main": "bin/ngx.js",
   "bin": {
