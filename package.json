@@ -1,0 +1,34 @@
+{
+  "name": "@ngx-devtools/cli",
+  "version": "0.0.1",
+  "description": "",
+  "main": "bin/ngx.js",
+  "bin": {
+    "ngx": "bin/ngx.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngx-devtools/cli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngx-devtools/cli/issues"
+  },
+  "homepage": "https://github.com/ngx-devtools/cli#readme",
+  "dependencies": {
+    "@ngx-devtools/build": "0.5.0",
+    "@ngx-devtools/bundle": "0.5.0",
+    "@ngx-devtools/lint": "0.5.0",
+    "@ngx-devtools/server": "0.5.0",
+    "@ngx-devtools/test": "0.5.0",
+    "chalk": "2.3.0",
+    "yargs": "11.0.0"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0"
+  }
+}
