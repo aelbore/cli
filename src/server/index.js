@@ -1,2 +1,3 @@
-const server = require('@ngx-devtools/server');
-server().start();
+exports.injectReload = require('./inject-livereload');
+exports.watchServer = require('./watch');
+exports.startServer = require('./start');

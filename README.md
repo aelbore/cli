@@ -30,3 +30,8 @@ ngx run bundle
 + All your code should be in `src` folder
 + You should have `index.ts` at root level of your `src` folder
 + `index.ts` file should have all exported component, modules, directives, pipes and etc. 
+
+#### Serve your application
+```
+ngx run serve
+```
