@@ -27,6 +27,7 @@
     "@ngx-devtools/test": "0.6.0",
     "chalk": "2.3.0",
     "gulp-develop-server": "0.5.2",
-    "gulp-livereload": "3.8.1"
+    "gulp-livereload": "3.8.1",
+    "yargs": "11.0.0"
   }
 }
