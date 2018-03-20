@@ -19,13 +19,21 @@
     "url": "https://github.com/ngx-devtools/cli/issues"
   },
   "homepage": "https://github.com/ngx-devtools/cli#readme",
+  "devDependencies": {
+    "@angular-devkit/build-optimizer": "0.4.5",
+    "@ngx-devtools/common": "latest",
+    "gulp-sourcemaps": "2.6.4",
+    "gulp-typescript": "4.0.1",
+    "is-stream": "1.1.0",
+    "ternary-stream": "2.0.1",
+    "gulp-match": "1.0.3"
+  },
   "dependencies": {
     "@ngx-devtools/build": "latest",
     "@ngx-devtools/bundle": "latest",
     "@ngx-devtools/lint": "latest",
     "@ngx-devtools/server": "latest",
     "@ngx-devtools/test": "latest",
-    "chalk": "2.3.0",
     "gulp-develop-server": "0.5.2",
     "gulp-livereload": "3.8.1",
     "yargs": "11.0.0"

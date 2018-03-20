@@ -1,9 +1,6 @@
 
 const { bundle } = require('@ngx-devtools/bundle');
-
-const { startAsync, doneAsync } = require('../utils/text');
-
-const rimrafAsync = require('../utils/rimraf')
+const { startAsync, doneAsync, deleteFolderAsync } = require('@ngx-devtools/common');
 
 const bundleAsync = async ()  => { 
   await startAsync('bundle')
@@ -11,7 +8,7 @@ const bundleAsync = async ()  => {
     .then(startTime => doneAsync('bundle', null, startTime));
 };
 
-Promise.all([ rimrafAsync('dist'), rimrafAsync('.tmp') ])
+Promise.all([ deleteFolderAsync('dist'), deleteFolderAsync('.tmp') ])
   .then(() => bundleAsync())
-  .then(() => rimrafAsync('.tmp'))
+  .then(() => deleteFolderAsync('.tmp'))
   .catch(error => console.log(error));

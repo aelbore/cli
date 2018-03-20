@@ -2,9 +2,9 @@ const vfs = require('vinyl-fs');
 const path = require('path');
 const glob = require('glob');
 
-const { streamToPromise } = require('@ngx-devtools/common');
+const { streamToPromise, devtools } = require('@ngx-devtools/common');
 
-const serverConfig = require('../utils/devtools');
+const serverConfig = devtools['server']
 const injectLiveReload = require('../utils/inject-livereload');
 
 module.exports = () => {

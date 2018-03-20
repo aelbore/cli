@@ -1,7 +1,5 @@
 
-const rimrafAsync = require('../utils/rimraf');
-
-const { startAsync, doneAsync } = require('../utils/text');
+const { startAsync, doneAsync, deleteFolderAsync } = require('@ngx-devtools/common');
 const { build, watch } = require('@ngx-devtools/build');
 
 const buildAsync = async ()  => { 
@@ -10,7 +8,7 @@ const buildAsync = async ()  => {
     .then(startTime => doneAsync('build', null, startTime));
 };
 
-rimrafAsync('dist')
+deleteFolderAsync('dist')
   .then(() => buildAsync())
   .catch(error => console.log(error));
   
